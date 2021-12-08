@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(257, 40%, 49%) url("../images/bg-mobile.svg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem 4rem;
+}
+header{
+  padding-bottom: 3rem;
+}
+main{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+}
+header .logo{
+  width: 10rem;
+  height: auto;
+}
+
+.illustration img{
+  width: 100%;
+  height: auto;
+}
+
+.description{
+  padding: 0 3rem;
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+.margin{
+  margin-top: 1.5rem;
+}
+.register{
+  display: inline-block;
+  padding: 1rem 5rem;
+  border-radius: 50px;
+  background: #fff;
+  text-decoration: none;
+  color:hsl(257, 40%, 49%);
+}
+
+.register:hover{
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: #ffff;
+}
+footer{
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+footer .icons a{
+  color: #ffff;
+  margin-left: 1rem;
+}
+.icons a:hover{
+  color: hsl(295, 60%, 54%);
+}
+@media (min-width:800px){
+  body{
+    text-align: left;
+    background: hsl(257, 40%, 49%) url("../images/bg-desktop.svg");
+    padding: 2rem 4rem;
+  }
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .illustration, .description{
+    width: 50%;
+  }
+  .description{
+    margin-left: 2rem;
+    flex: 1;
+    padding:0;
+  }
+  .illustration{
+    display: flex;
+    flex-direction: column;
+    flex: 1.5;
+  }
+  .illustration img{
+    width: 100%;
+    height: auto;
+  }
+  footer{
+    justify-content: flex-end;
+  }
+
+}
+@media (min-width:1200px){
+  .illustration, .description{
+    flex:1;
+  }
+  .illustration{
+    padding:0 3rem;
+  }
+}
